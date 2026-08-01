@@ -1,0 +1,146 @@
+.c2cp-card-checkout-fields {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+	justify-content: space-around;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+}
+.c2cp-checkout-blue-color {
+    background: #f0f4ff;
+	border: 1px solid #03A9F4;
+}
+.c2cp-checkout-red-color {
+	background: #f3ecec;
+    border: 1px solid #ffd0d0;
+}
+.c2cp-checkout-green-color {
+    background: #f3ffea;
+    border: 1px solid #158934;
+}
+.c2cp-checkout-orange-color {
+    background: #fff5e9;
+    border: 1px solid orange;
+}
+.c2cp-checkout-purple-color {
+    background: #f9f1ff;
+    border: 1px solid #9C27B0;
+}
+.c2cp-checkout-gray-color {
+    background: #e5e5e5;
+    border: 1px solid #898989;
+}
+input#c2cp_cart_receipt_no {
+    background: #ffffff85;
+}
+input#c2cp_cart_imgdoc {
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 7px;
+}
+.c2cp-card-img-container>img {
+	border-radius: 12px;
+	max-height: 200px;
+}
+.c2cp-card-img-container span {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	background: white;
+	position: relative;
+	top: 10px;
+    right: -10px;
+    color: black;
+    width: 25px;
+    height: 25px;
+	font-size: 16px;    
+    border-radius: 100%;
+	cursor: pointer;
+    box-shadow: 0 0 5px 1px #00000026;          
+    display: none;
+}
+.c2cp-display-thankyoupage {
+    display: flex;
+    justify-content: space-around;
+    border: 1px dashed #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.c2cp-display-thankyoupage img {
+    max-width: 200px !important;
+    border-radius: 10px;
+}
+.c2cp-display-thankyoupage-notice {
+	color: #b50000;
+}
+.c2cp-invalid-required-field {
+    border-color: #ca1919 !important;
+    background: #fff7f7 !important;
+}
+section.woocommerce-bacs-bank-details-------- {
+    display: none;
+}
+section.c2cp-bacs-bank-fdetails, section.c2cp-bacs-bank-fdetails-thp {
+    display: grid;
+    gap: 15px;
+}
+.c2cp-bacs-bank-details {
+    border: 1px dashed #d9d9d9;
+    border-radius: 15px;
+    padding: 20px;
+    background: #f9f9f9;
+    list-style: none;
+    order: 2;
+	display: none;
+}
+
+.c2cp-bacs-bank-details-0 {
+    display: block;
+}
+.c2cp-bacs-bank-titel {
+    display: flex;
+    cursor: pointer;
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+}
+.c2cp-bacs-bank-titel img {
+    width: 50px !important;
+	max-width: 50px !important;
+    height: 50px !important;
+    max-height: 50px !important;
+}
+
+h5.wc-bacs-bank-details-account-name {
+    line-height: 1.4;
+}
+span.c2cp-bacs-bank-copy {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.c2cp-bacs-bank-copy img {
+    height: 20px;
+    margin-top: -7px;
+}
+span.account_number_title {
+    float: right;
+    margin-left: 5px;
+}
+.woocommerce-checkout #payment ul.payment_methods li {
+	border: none !important;
+}
+
+
+@media screen and (max-width: 600px) {
+	.c2cp-card-checkout-fields {
+		flex-direction: column;
+	}
+	.c2cp-bacs-bank-details {
+		padding: 10px 6px 10px 0;
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,131 @@
+input.c2cp-settings-url {
+    padding-left: 35px !important;
+    background-color: white !important;
+    background-size: 20px !important;
+    cursor: pointer !important;
+}
+.button-secondary {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+label[for=c2cp_settings_mobilecol]:before {
+    content: "\f470";
+    font-family: dashicons;
+	margin: 0 5px;
+}
+label[for=c2cp_settings_deskcol]:before , label[for=c2cp_settings_deskcol_thp]:before {
+    content: "\f472";
+    font-family: dashicons;
+	margin: 0 5px;
+}
+
+.c2c-admin-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+
+.c2c-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000d9;
+}
+
+/* Modal Content */
+.c2c-modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* The Close Button */
+.c2c-close {
+    color: #878787;
+    position: absolute;
+    top: 110px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 35px;
+    font-weight: bold;
+    right: 180px;
+    z-index: 20;
+}
+
+.c2c-close:hover,
+.c2c-close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c2c-mySlides {
+  display: none;
+}
+
+c2c-img {
+  margin-bottom: -4px;
+}
+
+.c2c-caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.c2c-demo {
+  opacity: 0.6;
+}
+
+.c2c-column {
+    cursor: pointer;
+}
+
+.c2c-active,
+.c2c-demo:hover {
+  opacity: 1;
+}
+
+img.c2c-hover-shadow {
+  transition: 0.3s;
+}
+
+.c2c-hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.button.button-primary.c2c-submit-data {
+    display: none;
+    background: #ff990070;
+    border-color: #ff6a00;
+    color: #ff6a00;
+}
+a#c2c_remove_admin_btn {
+    background: #ff000038;
+    border-color: red;
+    color: #7d0000;
+}
+
+
+.c2cp_settings_tr {background: white;padding: 10px;display: flex;margin: 10px;border-radius: 10px;}
+
+.c2cp_settings_totalprice , .c2cp_settings_discount_amount , .c2cp_settings_discount_type , .c2cp_settings_iftitle {
+    margin-top: -30px;
+}
+
