@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 
-<img src="images/banner.png" alt="WooCommerce BACS Receipt Manager">
+<img src=".github/images/banner.webp" alt="WooCommerce BACS Receipt Manager">
 
 </p>
 
