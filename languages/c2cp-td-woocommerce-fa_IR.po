@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Save transaction details\n"
-"POT-Creation-Date: 2024-07-27 00:57+0330\n"
-"PO-Revision-Date: 2024-07-27 01:00+0330\n"
+"Project-Id-Version: WooCommerce BACS Receipt Upload\n"
+"POT-Creation-Date: 2026-08-01 14:42+0330\n"
+"PO-Revision-Date: 2026-08-01 14:57+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: c2cp-transaction-details.php\n"
+"X-Poedit-WPHeader: woocommerce-bacs-receipt-manager.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -21,69 +21,31 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: c2cp-transaction-details.php:49
-#, php-format
-msgid "You must have atleast wordpress version %s your curent version is %s"
-msgstr "حداقل نسخه وردپرس شما باید %s باشد، نسخه وردپرس شما  %s"
+#: inc/c2cp_card_detector.php:38
+msgid "Unknown Card"
+msgstr "کارت ناشناس"
 
-#: c2cp-transaction-details.php:56
-#, php-format
-msgid "You must have atleast php version %s"
-msgstr "حداقل نسخه php باید %s باشد"
-
-#: c2cp-transaction-details.php:62
-msgid ""
-"WooCommerce plugin is not installed/activated! To use the this plugin, first "
-"install and activate WooCommerce"
-msgstr ""
-"پلاگین ووکامرس نصب/فعال نشده است! برای استفاده از پلاگین \"کاروسل زمانبندی "
-"نمایش محصولات\" ابتدا ووکامرس را نصب کنید"
-
-#: c2cp-transaction-details.php:123
-msgid "Reset"
-msgstr "بازنشانی تنظیمات"
-
-#: c2cp-transaction-details.php:124
-msgid "Are you sure you want to reset settings?"
-msgstr "آیا مطمئن هستید که می خواهید تنظیمات را بازنشانی کنید؟"
-
-#: c2cp-transaction-details.php:263
-msgid "Billing details"
-msgstr "اطلاعات حساب"
-
-#: c2cp-transaction-details.php:277
-msgid "Order ID"
-msgstr ""
-
-#: c2cp-transaction-details.php:280 inc/c2cp_checkout.php:18
-#: inc/c2cp_settings.php:218 inc/c2cp_thankyou.php:10 inc/c2cp_thpform.php:8
-#: inc/old----c2cp_checkout.php:18
+#: inc/c2cp_checkout.php:18 inc/c2cp_settings.php:255 inc/c2cp_thankyou.php:10
+#: inc/c2cp_thpform.php:8 woocommerce-bacs-receipt-manager.php:280
 msgid "Receipt no/payment serial no"
 msgstr "شماره رسید/سریال پرداخت"
 
-#: c2cp-transaction-details.php:327
-msgid "Setting"
-msgstr "تنظیمات"
-
-#: inc/c2cp_checkout.php:21 inc/old----c2cp_checkout.php:21
+#: inc/c2cp_checkout.php:21
 #, php-format
 msgid "%s is a required field."
-msgstr ""
+msgstr "%s یک فیلد اجباری است."
 
-#: inc/c2cp_checkout.php:97 inc/c2cp_thankyou_bank.php:20
-#: inc/old----c2cp_checkout.php:93
+#: inc/c2cp_checkout.php:108 inc/c2cp_thankyou_bank.php:20
 msgid "Account number"
-msgstr ""
+msgstr "شماره حساب"
 
-#: inc/c2cp_checkout.php:98 inc/c2cp_thankyou_bank.php:21
-#: inc/old----c2cp_checkout.php:94
+#: inc/c2cp_checkout.php:109 inc/c2cp_thankyou_bank.php:21
 msgid "Sort code"
-msgstr ""
+msgstr "کد مرتب سازی"
 
-#: inc/c2cp_checkout.php:99 inc/c2cp_thankyou_bank.php:22
-#: inc/old----c2cp_checkout.php:95
+#: inc/c2cp_checkout.php:110 inc/c2cp_thankyou_bank.php:22
 msgid "IBAN"
-msgstr ""
+msgstr "شماره حساب بانکی "
 
 #: inc/c2cp_settings.php:13
 msgid "Payment method"
@@ -137,7 +99,7 @@ msgstr ""
 
 #: inc/c2cp_settings.php:128
 msgid "Order Status"
-msgstr ""
+msgstr "وضعیت سفارش"
 
 #: inc/c2cp_settings.php:129
 msgid "What is the status of orders made by direct bank transfer?"
@@ -146,31 +108,31 @@ msgstr ""
 
 #: inc/c2cp_settings.php:136
 msgid "Pending"
-msgstr ""
+msgstr "در حال بررسی"
 
 #: inc/c2cp_settings.php:137
 msgid "Processing"
-msgstr ""
+msgstr "در حال بررسی"
 
 #: inc/c2cp_settings.php:138
 msgid "On-hold"
-msgstr ""
+msgstr "در انتظار"
 
 #: inc/c2cp_settings.php:139
 msgid "Completed"
-msgstr ""
+msgstr "تکمیل شده"
 
 #: inc/c2cp_settings.php:140
 msgid "Canceled"
-msgstr ""
+msgstr "لغو شده"
 
 #: inc/c2cp_settings.php:141
 msgid "Refunded"
-msgstr ""
+msgstr "مرجوع شده"
 
 #: inc/c2cp_settings.php:142
 msgid "Failed"
-msgstr ""
+msgstr "شکست خورده"
 
 #: inc/c2cp_settings.php:149
 msgid "Hide card number"
@@ -187,146 +149,219 @@ msgstr ""
 "مخفی کنید."
 
 #: inc/c2cp_settings.php:159
+msgid "Special discount for this payment method"
+msgstr "تخفیف ویژه برای این روش پرداخت"
+
+#: inc/c2cp_settings.php:160
+msgid "You can offer the user a discount if they choose this payment method."
+msgstr "اگر کاربر این روش پرداخت را انتخاب کند، می‌توانید به او تخفیف بدهید."
+
+#: inc/c2cp_settings.php:170
+msgid "Discount type"
+msgstr "نوع تخفیف"
+
+#: inc/c2cp_settings.php:177
+msgid "Percentage discount"
+msgstr "درصد تخفیف"
+
+#: inc/c2cp_settings.php:178
+msgid "Fixed cart discount"
+msgstr "تخفیف ثابت سبد خرید"
+
+#: inc/c2cp_settings.php:184
+msgid "Discount amount"
+msgstr "مقدار تخفیف"
+
+#: inc/c2cp_settings.php:186
+msgid "Enter the desired discount amount."
+msgstr "مقدار تخفیف مورد نظر را وارد کنید."
+
+#: inc/c2cp_settings.php:195
 msgid "Disable other gateways"
 msgstr "غیرفعال کردن روش های پرداخت"
 
-#: inc/c2cp_settings.php:160
+#: inc/c2cp_settings.php:196
 msgid "Disable other gateways if total price is upper than set limit"
 msgstr ""
 "اگر مبلغ کل سبد خرید، برابر و یا از مبلغ تنظیم شده بیشتر بود، سایر روش های "
 "پرداخت را غیرفعال کن"
 
-#: inc/c2cp_settings.php:167
+#: inc/c2cp_settings.php:204
 msgid "Price"
 msgstr "مبلغ دلخواه"
 
-#: inc/c2cp_settings.php:169
+#: inc/c2cp_settings.php:206
 msgid "Total amount of the cart"
 msgstr "مبلغ کل سبد خرید"
 
-#: inc/c2cp_settings.php:176
+#: inc/c2cp_settings.php:213
 msgid "Color Theme"
 msgstr "تم رنگی"
 
-#: inc/c2cp_settings.php:177
+#: inc/c2cp_settings.php:214
 msgid "Box Theme Color"
 msgstr "تم رنگی کادر"
 
-#: inc/c2cp_settings.php:184
+#: inc/c2cp_settings.php:221
 msgid "Red"
 msgstr "قرمز"
 
-#: inc/c2cp_settings.php:185
+#: inc/c2cp_settings.php:222
 msgid "Blue"
 msgstr "آبی"
 
-#: inc/c2cp_settings.php:186
+#: inc/c2cp_settings.php:223
 msgid "Green"
 msgstr "سبز"
 
-#: inc/c2cp_settings.php:187
+#: inc/c2cp_settings.php:224
 msgid "Orange"
 msgstr "نارنجی"
 
-#: inc/c2cp_settings.php:188
+#: inc/c2cp_settings.php:225
 msgid "Purple"
 msgstr "بنفش"
 
-#: inc/c2cp_settings.php:189
+#: inc/c2cp_settings.php:226
 msgid "Gray"
 msgstr "خاکستری"
 
-#: inc/c2cp_settings.php:195
+#: inc/c2cp_settings.php:232
 msgid "Card Image"
 msgstr "تصویر کارت به کارت"
 
-#: inc/c2cp_settings.php:196
+#: inc/c2cp_settings.php:233
 msgid "Upload your Card Image"
 msgstr "آپلود تصویر کارت به کارت"
 
-#: inc/c2cp_settings.php:207
+#: inc/c2cp_settings.php:244
 msgid "Box title"
 msgstr "عنوان کادر"
 
-#: inc/c2cp_settings.php:209 inc/c2cp_thankyou.php:11 inc/c2cp_thpform.php:9
+#: inc/c2cp_settings.php:246 inc/c2cp_thankyou.php:11 inc/c2cp_thpform.php:9
 msgid "Register payment details"
 msgstr "ثبت جزئیات پرداخت"
 
-#: inc/c2cp_settings.php:216
+#: inc/c2cp_settings.php:253
 msgid "Field title"
 msgstr "عنوان فیلد"
 
-#: inc/c2cp_settings.php:224
+#: inc/c2cp_settings.php:261
 msgid "Image Upload"
 msgstr "آپلود تصویر"
 
-#: inc/c2cp_settings.php:225
+#: inc/c2cp_settings.php:262
 msgid "Users can attach an image"
 msgstr "کاربران اجازه بارگذاری تصویر کارت به کارت را داشته باشند"
 
-#: inc/c2cp_settings.php:233
+#: inc/c2cp_settings.php:270
 msgid "Image field title"
 msgstr "عنوان فیلد تصویر"
 
-#: inc/c2cp_settings.php:235 inc/c2cp_thpform.php:6
+#: inc/c2cp_settings.php:272 inc/c2cp_thpform.php:6
 msgid "Receipt image"
 msgstr "تصویر رسید"
 
-#: inc/c2cp_settings.php:242
+#: inc/c2cp_settings.php:279
 msgid "Notification"
 msgstr "اطلاعیه"
 
-#: inc/c2cp_settings.php:244 inc/c2cp_thankyou.php:8 inc/c2cp_thpform.php:5
+#: inc/c2cp_settings.php:281 inc/c2cp_thankyou.php:8 inc/c2cp_thpform.php:5
 msgid "After checking the financial affairs, your order will be sent."
 msgstr "پس از بررسی امور مالی، سفارش شما ارسال می گردد."
 
-#: inc/c2cp_settings.php:247
+#: inc/c2cp_settings.php:284
 msgid "Thank you page notification text"
 msgstr "متن اطلاعیه صفحه تشکر از خرید"
 
-#: inc/c2cp_settings.php:252
+#: inc/c2cp_settings.php:289
 msgid "Font Size"
 msgstr "اندازه فونت"
 
-#: inc/c2cp_settings.php:254
+#: inc/c2cp_settings.php:291
 msgid ""
 "The font size of the notification of the thank you for purchase page (in px)"
 msgstr "اندازه فونت اعلان صفحه تشکر از خرید (بر حسب پیکسل)"
 
-#: inc/c2cp_settings.php:276
+#: inc/c2cp_settings.php:313
 msgid "Overview"
-msgstr ""
+msgstr "نمای کلی"
 
-#: inc/c2cp_thpform.php:26 inc/old----c2cp_checkout.php:92
+#: inc/c2cp_thpform.php:32
 msgid "Bank"
-msgstr ""
+msgstr "بانک"
 
-#: inc/c2cp_thpform.php:41
+#: inc/c2cp_thpform.php:48
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
 
-#: inc/old----c2cp_checkout.php:84
-msgid "Our bank details"
+#: woocommerce-bacs-receipt-manager.php:49
+#, php-format
+msgid "You must have atleast wordpress version %s your curent version is %s"
+msgstr "حداقل نسخه وردپرس شما باید %s باشد، نسخه وردپرس شما  %s"
+
+#: woocommerce-bacs-receipt-manager.php:56
+#, php-format
+msgid "You must have atleast php version %s"
+msgstr "حداقل نسخه php باید %s باشد"
+
+#: woocommerce-bacs-receipt-manager.php:62
+msgid ""
+"WooCommerce plugin is not installed/activated! To use the this plugin, first "
+"install and activate WooCommerce"
 msgstr ""
+"پلاگین ووکامرس نصب/فعال نشده است! برای استفاده از پلاگین \"کاروسل زمانبندی "
+"نمایش محصولات\" ابتدا ووکامرس را نصب کنید"
+
+#: woocommerce-bacs-receipt-manager.php:123
+msgid "Reset"
+msgstr "بازنشانی تنظیمات"
+
+#: woocommerce-bacs-receipt-manager.php:124
+msgid "Are you sure you want to reset settings?"
+msgstr "آیا مطمئن هستید که می خواهید تنظیمات را بازنشانی کنید؟"
+
+#: woocommerce-bacs-receipt-manager.php:263
+msgid "Billing details"
+msgstr "اطلاعات حساب"
+
+#: woocommerce-bacs-receipt-manager.php:277
+msgid "Order ID"
+msgstr "شناسه سفارش"
+
+#: woocommerce-bacs-receipt-manager.php:368
+msgid "Setting"
+msgstr "تنظیمات"
 
 #. Plugin Name of the plugin/theme
-msgid "Save transaction details"
-msgstr "ثبت جزئیات تراکنش"
+msgid "WooCommerce BACS Receipt Upload"
+msgstr "آپلود رسید ووکامرس"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-msgid "https://www.zhaket.com/store/web/darsad"
-msgstr ""
+msgid "https://github.com/pooyanshabani"
+msgstr "https://github.com/pooyanshabani"
 
 #. Description of the plugin/theme
 msgid ""
-"Save payment information and details of deposit to account - card to card in "
-"WooCommerce."
-msgstr "ثبت جزئیات و اطلاعات پرداخت واریز به حساب - کارت به کارت ووکامرس."
+"A WooCommerce plugin that extends Direct Bank Transfer (BACS) by collecting "
+"payment receipts, transaction IDs, proof images, and bank account "
+"information."
+msgstr ""
+"افزونه‌ای برای ووکامرس که با جمع‌آوری رسیدهای پرداخت، شناسه تراکنش‌ها، تصاویر "
+"اثبات و اطلاعات حساب بانکی، انتقال مستقیم بانکی (BACS) را گسترش می‌دهد."
 
 #. Author of the plugin/theme
-msgid "درصد - پویان شعبانی"
-msgstr ""
+msgid "Pooyan Shabani"
+msgstr "پویان شعبانی"
+
+#~ msgid "Save transaction details"
+#~ msgstr "ثبت جزئیات تراکنش"
+
+#~ msgid ""
+#~ "Save payment information and details of deposit to account - card to card "
+#~ "in WooCommerce."
+#~ msgstr "ثبت جزئیات و اطلاعات پرداخت واریز به حساب - کارت به کارت ووکامرس."
 
 #~ msgid "Notification Settings"
 #~ msgstr "تنظیمات اطلاع رسانی"
@@ -349,9 +384,3 @@ msgstr ""
 #~ msgstr ""
 #~ "ربات notificator_ir_bot را در تلگرام یا بله جستجو کنید، پس از start "
 #~ "دستور /token را وارد نمایید و توکن دریافت شده را در اینجا کپی کنید"
-
-#~ msgid "https://pooyan-shabani.ir"
-#~ msgstr "https://pooyan-shabani.ir"
-
-#~ msgid "Pooyan Shabani"
-#~ msgstr "پویان شعبانی"
