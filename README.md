@@ -13,6 +13,10 @@ Automatically collect bank transfer receipts, transaction IDs, and payment proof
 This plugin extends the default WooCommerce Direct Bank Transfer (BACS) gateway by allowing customers to submit payment details and upload receipt images. Administrators can review, manage, and verify submitted receipts directly from the WooCommerce order page.
 
 ---
+# 🚀 Live Demo
+
+👉 [https://dev.pooyan-shabani.ir/?product=decoration-wooden-present](https://dev.pooyan-shabani.ir/?product=decoration-wooden-present)
+
 
 ## ✨ Features
 
