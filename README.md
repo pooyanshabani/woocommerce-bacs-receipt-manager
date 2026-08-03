@@ -43,33 +43,25 @@ This plugin extends the default WooCommerce Direct Bank Transfer (BACS) gateway 
 
 ## Plugin Settings
 
-<!-- Screenshot -->
-
-images/settings.png
+<img src=".github/images/settings.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## Checkout Page
 
-<!-- Screenshot -->
-
-images/checkout.png
+<img src=".github/images/checkout.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## Thank You Page
 
-<!-- Screenshot -->
-
-images/thankyou.png
+<img src=".github/images/thankyou.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## WooCommerce Order Admin
 
-<!-- Screenshot -->
-
-images/order-admin.png
+<img src=".github/images/order-admin.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
