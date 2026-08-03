@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 
-<img src="images/banner.png" alt="WooCommerce BACS Receipt Manager">
+<img src=".github/images/banner.webp" alt="WooCommerce BACS Receipt Manager">
 
 </p>
 
@@ -13,6 +13,10 @@ Automatically collect bank transfer receipts, transaction IDs, and payment proof
 This plugin extends the default WooCommerce Direct Bank Transfer (BACS) gateway by allowing customers to submit payment details and upload receipt images. Administrators can review, manage, and verify submitted receipts directly from the WooCommerce order page.
 
 ---
+# 🚀 Live Demo
+
+👉 [https://dev.pooyan-shabani.ir/shop/decoration-wooden-present/](https://dev.pooyan-shabani.ir/shop/decoration-wooden-present/?add-to-cart=334&quantity=1)
+
 
 ## ✨ Features
 
@@ -39,33 +43,25 @@ This plugin extends the default WooCommerce Direct Bank Transfer (BACS) gateway 
 
 ## Plugin Settings
 
-<!-- Screenshot -->
-
-images/settings.png
+<img src=".github/images/settings.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## Checkout Page
 
-<!-- Screenshot -->
-
-images/checkout.png
+<img src=".github/images/checkout.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## Thank You Page
 
-<!-- Screenshot -->
-
-images/thankyou.png
+<img src=".github/images/thankyou.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
 ## WooCommerce Order Admin
 
-<!-- Screenshot -->
-
-images/order-admin.png
+<img src=".github/images/order-admin.webp" alt="WooCommerce BACS Receipt Manager">
 
 ---
 
