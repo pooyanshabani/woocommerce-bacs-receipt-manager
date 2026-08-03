@@ -15,7 +15,7 @@ This plugin extends the default WooCommerce Direct Bank Transfer (BACS) gateway 
 ---
 # 🚀 Live Demo
 
-👉 [https://dev.pooyan-shabani.ir/?product=decoration-wooden-present](https://dev.pooyan-shabani.ir/?product=decoration-wooden-present&add-to-cart=334&quantity=1)
+👉 [https://dev.pooyan-shabani.ir/shop/decoration-wooden-present/](https://dev.pooyan-shabani.ir/shop/decoration-wooden-present/?add-to-cart=334&quantity=1)
 
 
 ## ✨ Features
