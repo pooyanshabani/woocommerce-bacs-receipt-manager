@@ -35,7 +35,7 @@ function c2cp_detect_card( $card_number ) {
 
     $result = array(
         'type' => 'unknown',
-        'name' => __( 'Unknown Card', 'c2cp-td-woocommerce' ),
+        'name' => __( 'Unknown Card', 'woocommerce-bacs-receipt-manager-td' ),
         'logo' => '',
     );
 

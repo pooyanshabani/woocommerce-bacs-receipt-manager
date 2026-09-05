@@ -15,7 +15,7 @@ function c2cp_card_checkout_fields( $checkout ) {
 add_action('woocommerce_checkout_process', 'c2cp_validate_receipt_field');
 
 function c2cp_validate_receipt_field() {
-	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','c2cp-td-woocommerce');}
+	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','woocommerce-bacs-receipt-manager-td');}
   if ($_POST['payment_method'] === 'bacs') {
     if (empty($_POST['c2cp_cart_receipt_no'])) {
       wc_add_notice ('<strong>' . sprintf( __('%s is a required field.', 'woocommerce'), $c2cp_settings_rftitle) . '</strong>', 'error');

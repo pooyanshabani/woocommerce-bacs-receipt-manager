@@ -2,11 +2,11 @@
 defined('ABSPATH') || exit;
 
 global $wpdb;
-if (get_option('c2cp_settings_tptext')) {$c2cp_settings_tptext = get_option('c2cp_settings_tptext');} else {$c2cp_settings_tptext = __('After checking the financial affairs, your order will be sent.','c2cp-td-woocommerce');}
-if (get_option('c2cp_settings_iftitle')) {$c2cp_settings_iftitle = get_option('c2cp_settings_iftitle');} else {$c2cp_settings_iftitle = __( 'Receipt image', 'c2cp-td-woocommerce' );}
+if (get_option('c2cp_settings_tptext')) {$c2cp_settings_tptext = get_option('c2cp_settings_tptext');} else {$c2cp_settings_tptext = __('After checking the financial affairs, your order will be sent.','woocommerce-bacs-receipt-manager-td');}
+if (get_option('c2cp_settings_iftitle')) {$c2cp_settings_iftitle = get_option('c2cp_settings_iftitle');} else {$c2cp_settings_iftitle = __( 'Receipt image', 'woocommerce-bacs-receipt-manager-td' );}
 if (get_option('c2cp_settings_imgcheckbox')) {$c2cp_settings_imgcheckbox = get_option('c2cp_settings_imgcheckbox');} else {$c2cp_settings_imgcheckbox = 'yes';}
-if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','c2cp-td-woocommerce');}
-if (get_option('c2cp_settings_btitle')) {$c2cp_settings_btitle = get_option('c2cp_settings_btitle');} else {$c2cp_settings_btitle = __('Register payment details','c2cp-td-woocommerce');}
+if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','woocommerce-bacs-receipt-manager-td');}
+if (get_option('c2cp_settings_btitle')) {$c2cp_settings_btitle = get_option('c2cp_settings_btitle');} else {$c2cp_settings_btitle = __('Register payment details','woocommerce-bacs-receipt-manager-td');}
 if (get_option('c2cp_settings_url')) {$c2cp_settings_url = get_option('c2cp_settings_url');} else {$c2cp_settings_url = C2CP_RTD_IMAGES_URL . 'c2cp_card.png' ;}
 if (get_option('c2cp_settings_theme')) {$c2cp_settings_theme = get_option('c2cp_settings_theme');} else {$c2cp_settings_theme = 'red';}
 if (get_option('c2cp_settings_page')) {$c2cp_settings_page = get_option('c2cp_settings_page');} else {$c2cp_settings_page = 'checkout';}

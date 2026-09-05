@@ -1,14 +1,14 @@
 <?php
 /*
  * Plugin Name: WooCommerce BACS Receipt Upload
- * Plugin URI: https://github.com/pooyanshabani
+ * Plugin URI: https://github.com/pooyanshabani/woocommerce-bacs-receipt-manager
  * Description: A WooCommerce plugin that extends Direct Bank Transfer (BACS) by collecting payment receipts, transaction IDs, proof images, and bank account information.
  * Author: Pooyan Shabani
  * Author URI: https://github.com/pooyanshabani
- * Text Domain: c2cp-td-woocommerce
+ * Text Domain: woocommerce-bacs-receipt-manager
  * Domain Path: /languages
  * Version: 1.0.0
- * Requires at least: 7.0
+ * Requires at least: 6.4
  * Requires PHP:      8.0
  */
 
@@ -46,20 +46,20 @@ register_activation_hook(__FILE__, function () {
     if (version_compare($wp_version, $wp, '<')) {
 
         wp_die(
-            sprintf( __('You must have atleast wordpress version %s your curent version is %s', 'c2cp-td-woocommerce'), $wp, $wp_version)
+            sprintf( __('You must have atleast wordpress version %s your curent version is %s', 'woocommerce-bacs-receipt-manager-td'), $wp, $wp_version)
         );
     }
 
     if (version_compare(PHP_VERSION, $php, '<')) {
 
         wp_die(
-            sprintf( __('You must have atleast php version %s', 'c2cp-td-woocommerce'), $php)
+            sprintf( __('You must have atleast php version %s', 'woocommerce-bacs-receipt-manager-td'), $php)
         );
 
     }
 	if (!is_plugin_active('woocommerce/woocommerce.php')){
 		wp_die(
-			__('WooCommerce plugin is not installed/activated! To use the this plugin, first install and activate WooCommerce', 'c2cp-td-woocommerce')
+			__('WooCommerce plugin is not installed/activated! To use the this plugin, first install and activate WooCommerce', 'woocommerce-bacs-receipt-manager-td')
         );
 	}
 
@@ -76,7 +76,7 @@ register_deactivation_hook(__FILE__, function () {
 //add text domain action
 add_action('plugins_loaded', function () {
 	load_plugin_textdomain(
-		'c2cp-td-woocommerce',
+		'woocommerce-bacs-receipt-manager-td',
 		false,
 		dirname( plugin_basename(__FILE__) ) . '/languages'
 	);
@@ -120,8 +120,8 @@ global $pagenow;
 		);
 
 		$c2c_settingsjs = [
-			'button_title'		=> __( 'Reset', 'c2cp-td-woocommerce' ),
-			'button_confirm'	=> __( 'Are you sure you want to reset settings?', 'c2cp-td-woocommerce' ),
+			'button_title'		=> __( 'Reset', 'woocommerce-bacs-receipt-manager-td' ),
+			'button_confirm'	=> __( 'Are you sure you want to reset settings?', 'woocommerce-bacs-receipt-manager-td' ),
 		];
 
 		wp_localize_script ('c2cp-admin-script', 'c2cp_admin_settingsjs', $c2c_settingsjs);
@@ -277,7 +277,7 @@ function custom_metabox_content( $object ) {
     echo '<p>' . __('Order ID','woocommerce') . ': '. $c2c_order_id .'<p>';
       
 	$upload_dir = wp_upload_dir();
-	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','c2cp-td-woocommerce');}
+	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','woocommerce-bacs-receipt-manager-td');}
 		echo '<p>' . $c2cp_settings_rftitle . ': </p><p><strong>' . c2c_wc_get_order_data ( $c2c_order_id, '_c2cp_cart_receipt_no') . '</strong></p>';
 		echo '<p><strong>' . c2c_wc_get_order_data ( $c2c_order_id, '_c2cp_bank_account') . '</strong></p><br>';
 		echo '<form action="" method=""><div class="c2c-admin-btn">';
@@ -365,7 +365,7 @@ function custom_metabox_content( $object ) {
 
 
 function c2cp_plugins_page_settings_link($links) { 
-  $settings_link = '<a href="' . admin_url('admin.php') . '?page=wc-settings&tab=checkout&section=c2cp-settings">' . __('Setting','c2cp-td-woocommerce') . '</a>'; 
+  $settings_link = '<a href="' . admin_url('admin.php') . '?page=wc-settings&tab=checkout&section=c2cp-settings">' . __('Setting','woocommerce-bacs-receipt-manager-td') . '</a>'; 
   array_unshift($links, $settings_link); 
   return $links; 
 }

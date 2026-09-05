@@ -5,10 +5,10 @@ add_action('woocommerce_thankyou', 'c2cp_display_data_thankyoupage', 10, 1);
 
 function c2cp_display_data_thankyoupage($order_id) {
 	global $wpdb;
-	if (get_option('c2cp_settings_tptext')) {$c2cp_settings_tptext = get_option('c2cp_settings_tptext');} else {$c2cp_settings_tptext = __('After checking the financial affairs, your order will be sent.','c2cp-td-woocommerce');}
+	if (get_option('c2cp_settings_tptext')) {$c2cp_settings_tptext = get_option('c2cp_settings_tptext');} else {$c2cp_settings_tptext = __('After checking the financial affairs, your order will be sent.','woocommerce-bacs-receipt-manager-td');}
 
-	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','c2cp-td-woocommerce');}
-	if (get_option('c2cp_settings_btitle')) {$c2cp_settings_btitle = get_option('c2cp_settings_btitle');} else {$c2cp_settings_btitle = __('Register payment details','c2cp-td-woocommerce');}
+	if (get_option('c2cp_settings_rftitle')) {$c2cp_settings_rftitle = get_option('c2cp_settings_rftitle');} else {$c2cp_settings_rftitle = __('Receipt no/payment serial no','woocommerce-bacs-receipt-manager-td');}
+	if (get_option('c2cp_settings_btitle')) {$c2cp_settings_btitle = get_option('c2cp_settings_btitle');} else {$c2cp_settings_btitle = __('Register payment details','woocommerce-bacs-receipt-manager-td');}
 	if (get_option('c2cp_settings_imgcheckbox')) {$c2cp_settings_imgcheckbox = get_option('c2cp_settings_imgcheckbox');} else {$c2cp_settings_imgcheckbox = 'yes';}
 	$order = wc_get_order($order_id);
 	$currentUrl = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
